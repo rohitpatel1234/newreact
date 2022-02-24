@@ -155,16 +155,68 @@
   @media (max-width: 998px) {
     .main-card--cointainer {
       display: grid;
-      grid-template-columns: repeat(1, minmax(200px, 500px));
-      grid-gap: 50px;
+      grid-template-columns: repeat(1, minmax(200px, 400px));
+      grid-gap: 10px;
       justify-content: space-around;
     }
-  }
+    .btn-group__item:last-child {
+        border-top-right-radius: 0rem !important;
+        border-bottom-right-radius: 0rem !important;
+      }
+      .btn-group__item:first-child {
+        border-top-left-radius: 0rem !important;
+        border-bottom-left-radius: 0rem !important;
+      }
+      .card-container img {
+        max-width: 300px;
+        height: 210px;
+      }
+      .brandname{
+          text-align: center;
+      }
+      .btn-group__item {
+        border: none;
+        /* min-width: 2rem; */
+        text-align: center;
+        display: inline block !important;
+        
+        
+       height: 2.5vh !important;
+       width: 10vh !important;
+       font-family: "Cormorant Garamond", serif;
+        /* padding: 1.5rem 3rem; */
+        background-color: rgb(255, 255, 255);
+        cursor: pointer;
+        margin: 0;
+        font-size: 1.5vh !important;
+        box-shadow: inset 0px 0px 0px -15px rebeccapurple;
+        transition: all 300ms ease-out;
+        text-transform: capitalize;
+      }
+      .brandname span{
+        color:  lightseagreen;
+        display: inline;
+        text-align: center;
+        
+    }
+    .brandname{
+        color: rgb(237, 244, 247);
+         position:relative;
+          left:1vh !important;
+      text-align: center;
+          top:2px;
+         font-size: 4vh;
+     }
+    
+      
+      
+    }
+  
   
   /* ---------- Button styles ------------------ */
   
   .navbar {
-    padding-top: 50px;
+    padding-top: 5vh;
     text-align: center;
     margin-bottom: 5vh;
     
@@ -173,31 +225,34 @@
   
   .navbar h1 {
       
-    padding-bottom: 20px;
+    padding-bottom: 3vh;
     text-transform: capitalize;
   }
   
   /** button group styles **/
   .btn-group {
      
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     text-transform: capitalize;
+    width: auto;
     
     
   
   }
   .btn-group__item {
     border: none;
-    min-width: 6rem;
+    min-width: 0.5vh;
     text-align: center;
-   height: 40px;
-   width: 20vh;
+    display: inline;
+    
+   height: 4vh;
+   width: 15vh;
    font-family: "Cormorant Garamond", serif;
     /* padding: 1.5rem 3rem; */
     background-color: rgb(255, 255, 255);
     cursor: pointer;
     margin: 0;
-    font-size: 17px;
+    font-size: 2.1vh;
     box-shadow: inset 0px 0px 0px -15px rebeccapurple;
     transition: all 300ms ease-out;
     text-transform: capitalize;
@@ -236,7 +291,8 @@
   /* Add a black background color to the top navigation */
 .topnav {
     background-color: rgb(102, 124, 6);
-    overflow: hidden;
+    /* overflow: hidden; */
+    
     
   }
   
@@ -278,10 +334,13 @@
 .brandname h3{
     font: bold 25px sans-serif;
     font: normal 36px 'Open Sans', cursive;
+    display:inline;
+    text-align: center;
     
 }
 .brandname span{
     color:  lightseagreen;
+    
 }
 
 /* ------------footer css------------- */
